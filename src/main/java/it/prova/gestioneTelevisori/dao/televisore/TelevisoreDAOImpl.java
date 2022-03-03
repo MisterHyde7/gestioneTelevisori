@@ -2,9 +2,7 @@ package it.prova.gestioneTelevisori.dao.televisore;
 
 import java.sql.Connection;
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 import it.prova.gestioneTelevisori.dao.DB_Mock;
 import it.prova.gestioneTelevisori.model.Televisore;

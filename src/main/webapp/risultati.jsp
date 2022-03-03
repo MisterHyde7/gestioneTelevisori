@@ -54,7 +54,7 @@ th, td {
 		%>
 		<tr>
 			<td>
-				<a href="PrepareInsertServlet">-Inserisci nuovo televisore</a>
+				<a href="PrepareUpdateServlet">-Inserisci nuovo televisore</a>
 			</td>
 		</tr>
 	</table>
