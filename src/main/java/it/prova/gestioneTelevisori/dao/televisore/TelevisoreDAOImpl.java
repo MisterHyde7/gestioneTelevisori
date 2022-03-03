@@ -1,7 +1,10 @@
 package it.prova.gestioneTelevisori.dao.televisore;
 
 import java.sql.Connection;
+import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import it.prova.gestioneTelevisori.dao.DB_Mock;
 import it.prova.gestioneTelevisori.model.Televisore;
@@ -60,6 +63,26 @@ public class TelevisoreDAOImpl implements TelevisoreDAO {
 	@Override
 	public int delete(Televisore input) throws Exception {
 		return DB_Mock.LISTA_TELEVISORI.remove(input) ? 1 : 0;
+	}
+
+	@Override
+	public List<Televisore> findByExample(Televisore televisoreInput) throws Exception {
+
+		List<Televisore> listaSuDB = this.list();
+		List<Televisore> listaDiTelevisoriPerRicerca = new ArrayList<>();
+
+		for (Televisore televisoreItem : listaSuDB) {
+
+			if (televisoreItem.getMarca().startsWith(televisoreInput.getMarca())
+					&& televisoreItem.getModello().startsWith(televisoreInput.getModello())
+					&& televisoreItem.getPrezzo() >= (televisoreInput.getPrezzo())
+					&& televisoreItem.getNumeroPollici() >= (televisoreInput.getNumeroPollici())
+					&& televisoreItem.getCodice().startsWith(televisoreInput.getCodice())) {
+				listaDiTelevisoriPerRicerca.add(televisoreItem);
+			}
+
+		}
+		return listaDiTelevisoriPerRicerca;
 	}
 
 }

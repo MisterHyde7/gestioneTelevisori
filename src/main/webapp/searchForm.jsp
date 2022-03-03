@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Ricerca di televisori</title>
 </head>
 <body>
 
@@ -14,7 +14,7 @@
 
 	<p>-inserisci i campi per avviare la ricerca</p>
 
-	<form action="" method="post">
+	<form action="SearchServlet" method="post">
 
 		<label for="idMarca">Marca: </label> 
 		<input type="text" name="marcaTelevisore" id="idMarca">
