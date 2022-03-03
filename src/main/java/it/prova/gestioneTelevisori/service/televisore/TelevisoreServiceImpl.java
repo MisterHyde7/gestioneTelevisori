@@ -34,7 +34,7 @@ public class TelevisoreServiceImpl implements TelevisoreService {
 	}
 
 	@Override
-	public int updateAbitante(Televisore televisoreInput) throws Exception {
+	public int updateTelevisore(Televisore televisoreInput) throws Exception {
 		return televisoreDAO.update(televisoreInput);
 	}
 
