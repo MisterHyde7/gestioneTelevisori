@@ -60,7 +60,12 @@ public class TelevisoreDAOImpl implements TelevisoreDAO {
 
 	@Override
 	public int delete(Televisore input) throws Exception {
-		return DB_Mock.LISTA_TELEVISORI.remove(input) ? 1 : 0;
+		for (Televisore televisoreItem : DB_Mock.LISTA_TELEVISORI) {
+			if (televisoreItem.getId() == input.getId()) {
+				DB_Mock.LISTA_TELEVISORI.remove(televisoreItem);
+			}
+		}
+		return 1;
 	}
 
 	@Override

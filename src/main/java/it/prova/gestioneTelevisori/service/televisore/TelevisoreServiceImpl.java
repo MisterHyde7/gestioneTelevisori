@@ -29,7 +29,7 @@ public class TelevisoreServiceImpl implements TelevisoreService {
 	}
 
 	@Override
-	public int deleteAbitante(Televisore televisoreInput) throws Exception {
+	public int deleteTelevisore(Televisore televisoreInput) throws Exception {
 		return televisoreDAO.delete(televisoreInput);
 	}
 

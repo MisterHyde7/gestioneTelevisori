@@ -15,7 +15,7 @@ public interface TelevisoreService {
 
 	public List<Televisore> listAll() throws Exception;
 
-	public int deleteAbitante(Televisore televisoreInput) throws Exception;
+	public int deleteTelevisore(Televisore televisoreInput) throws Exception;
 
 	public int updateAbitante(Televisore televisoreInput) throws Exception;
 	
