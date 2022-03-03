@@ -12,14 +12,14 @@ public class DB_Mock {
 	static {
 		// preparo una lista mock perché ancora non ho il collegamento alla
 		// base dati
-		LISTA_TELEVISORI.add(new Televisore("philips", "pus43", 400, 48, "pus43y"));
-		LISTA_TELEVISORI.add(new Televisore("hisense", "sense8", 200, 30, "sen8"));
-		LISTA_TELEVISORI.add(new Televisore("samsung", "sam77", 300, 20, "samuel7"));
-		LISTA_TELEVISORI.add(new Televisore("lg", "legible", 100, 14, "cheap"));
-		LISTA_TELEVISORI.add(new Televisore("toshiba", "jap99", 250, 40, "jappy"));
-		LISTA_TELEVISORI.add(new Televisore("dell", "linear", 175, 28, "linear7"));
-		LISTA_TELEVISORI.add(new Televisore("lenovo", "legion", 225, 23, "legionario"));
-		LISTA_TELEVISORI.add(new Televisore("hp", "heartpulse", 325, 70, "heartfull"));
+		LISTA_TELEVISORI.add(new Televisore(1L, "philips", "pus43", 400, 48, "pus43y"));
+		LISTA_TELEVISORI.add(new Televisore(2L, "hisense", "sense8", 200, 30, "sen8"));
+		LISTA_TELEVISORI.add(new Televisore(3L, "samsung", "sam77", 300, 20, "samuel7"));
+		LISTA_TELEVISORI.add(new Televisore(4L, "lg", "legible", 100, 14, "cheap"));
+		LISTA_TELEVISORI.add(new Televisore(5L, "toshiba", "jap99", 250, 40, "jappy"));
+		LISTA_TELEVISORI.add(new Televisore(6L, "dell", "linear", 175, 28, "linear7"));
+		LISTA_TELEVISORI.add(new Televisore(7L, "lenovo", "legion", 225, 23, "legionario"));
+		LISTA_TELEVISORI.add(new Televisore(8L, "hp", "heartpulse", 325, 70, "heartfull"));
 	}
 
 	public static Long getNexIdAvailable() {

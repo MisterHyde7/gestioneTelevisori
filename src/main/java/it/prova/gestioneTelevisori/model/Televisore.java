@@ -22,6 +22,16 @@ public class Televisore {
 		this.codice = codice;
 	}
 
+	public Televisore(Long id, String marca, String modello, int prezzo, int numeroPollici, String codice) {
+		super();
+		this.id = id;
+		this.marca = marca;
+		this.modello = modello;
+		this.prezzo = prezzo;
+		this.numeroPollici = numeroPollici;
+		this.codice = codice;
+	}
+
 	public Long getId() {
 		return id;
 	}
