@@ -15,8 +15,8 @@ import it.prova.gestioneTelevisori.service.MyServiceFactory;
 import it.prova.gestioneTelevisori.service.televisore.TelevisoreService;
 import it.prova.gestioneTelevisori.utility.NumberUtility;
 
-@WebServlet("/ExecuteUpdateServlet")
-public class ExecuteUpdateServlet extends HttpServlet {
+@WebServlet("/ExecuteInsertServlet")
+public class ExecuteInsertServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -36,6 +36,7 @@ public class ExecuteUpdateServlet extends HttpServlet {
 					|| NumberUtility.verificaSeInteroValido(numeroPolliciInputForm) < 0 || codiceInputForm.isEmpty()
 					|| codiceInputForm == null) {
 				destinazione = "inserimento.jsp";
+				request.setAttribute("inserimentoErrato", 0);
 			} else {
 				destinazione = "risultati.jsp";
 			}
